@@ -1,0 +1,26 @@
+{
+  "name": "crave-connect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjemagid/crave-connect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjemagid/crave-connect/issues"
+  },
+  "homepage": "https://github.com/cjemagid/crave-connect#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "querystring": "^0.2.0",
+    "xhr": "^2.4.0",
+    "xhr2": "^0.1.4",
+    "xtend": "^4.0.1"
+  }
+}
