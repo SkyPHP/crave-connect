@@ -3,7 +3,7 @@
  */
 'use strict'; 
 
-var Client = require('../lib/client'); 
+var Client = require('../index'); 
 
 describe('Testing API Client', function() {
     var client = null ;
@@ -12,7 +12,7 @@ describe('Testing API Client', function() {
         
         client = new Client({
             token   : 'r11ExLh7lBke1NlLnmeHy@yNg8nmx', 
-            staging : true
+            env     : 'dev'
         })
         
         done(); 
@@ -20,7 +20,7 @@ describe('Testing API Client', function() {
 
     it('Should return a list of events', done => {
         client.list_events({
-            market: 1
+            market_id : 1
         }).then(data => {
             console.log('data', data);
             done();
