@@ -37,4 +37,14 @@ describe('Testing API Client', function() {
         }).catch(err => done(err))
 
     })
+
+    it('Should return a list of careers', done => {
+        client.list_careers({
+            market_id : 1
+        }).then(data => {
+            console.log('data', data);
+            done();
+        }).catch(err => done(err))
+    })
+
 })
