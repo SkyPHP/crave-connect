@@ -38,6 +38,24 @@ describe('Testing API Client', function() {
 
     })
 
+    it('Should return a list of venues', done => {
+        client.list_venues({ }).then(data => {
+            console.log('data', data);
+            done();
+        }).catch(err => done(err))
+
+    })
+
+    it('Should return a single venue', done => {
+        client.get_venue({
+            id: '4678ad2c-adf3-11e7-a99f-067dcd62e170'
+        }).then(data => {
+            console.log('data', data);
+            done();
+        }).catch(err => done(err))
+
+    })
+
     it('Should return a list of careers', done => {
         client.list_careers({
             market_id : 1
