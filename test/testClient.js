@@ -11,7 +11,7 @@ describe('Testing API Client', function() {
     before(done => {
         
         client = new Client({
-            token   : 'r11ExLh7lBke1NlLnmeHy@yNg8nmx', 
+            token   : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1IjoiYzhlYzAyZjQtMzZkMi0xMWU5LThiOTctMGFiMDViNjZiMWUyIiwiZXhwIjoxNTY0NjIzODk4LCJhY2NvdW50X2lkIjoiM2ZhMTBmNjAtY2I2ZS0xMWU3LTgzNWUtMGFlZTgzNTM0ZjJhIiwicm9sZXMiOlsic3VwZXIiLCJ0ZWxlbWFya2V0aW5nIl0sImlhdCI6MTU1Njg0Nzg5OH0.ZTRfcJpGlgKAa5ZVfdzANOXBJpDeOyEJuW40XvEXz1A',
             env     : 'dev'
         })
         
@@ -48,7 +48,7 @@ describe('Testing API Client', function() {
 
     it('Should return a single venue', done => {
         client.get_venue({
-            id: '4678ad2c-adf3-11e7-a99f-067dcd62e170'
+            id: '96735dfe-ce78-11e7-8639-0aee83534f2a'
         }).then(data => {
             console.log('data', data);
             done();
