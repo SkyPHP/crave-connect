@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha \"test/*.js\""
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,16 @@
   "homepage": "https://github.com/cjemagid/crave-connect#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
+    "deepcopy": "0.6.3",
+    "deepmerge": "^1.5.2",
     "querystring": "^0.2.0",
     "xhr": "^2.4.0",
     "xhr2": "^0.1.4",
     "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "should": "^12.0.0"
   }
 }
